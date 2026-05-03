@@ -1,60 +1,185 @@
 @extends('layouts.app')
 
-@section('title', 'Article - Wilova')
-
 @section('content')
 
-<section class="article-list-page">
-    <div class="container">
+<section class="article-page">
 
-        <div class="article-list-title">
-            <h1>Article</h1>
-            <p>Kumpulan artikel seputar label baju, konveksi, dan branding fashion.</p>
+    {{-- BREADCRUMB --}}
+    <div class="breadcrumb-article">
+        <a href="{{ route('home') }}">Home</a>
+        <span>›</span>
+        <a href="{{ route('artikel') }}">Article</a>
+    </div>
+
+    {{-- TITLE --}}
+    <div class="article-page-title">
+        <h1>
+            Setiap artikel dirancang <strong>untuk memberi nilai,</strong> <br>
+            <strong>bukan sekadar informasi.</strong>
+        </h1>
+    </div>
+
+    {{-- ARTICLE GRID --}}
+    <div class="article-grid-page">
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-1.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
         </div>
 
-        <div class="article-card-grid">
-
-            <div class="article-page-card">
-                <img src="{{ asset('images/article-label.jpg') }}" alt="Article">
-                <div class="article-page-card-content">
-                    <h3>Cara mengembangkan jasa konveksi</h3>
-                    <p>
-                        Panduan lengkap memilih bahan label baju untuk usaha konveksi
-                        dan garmen agar brand terlihat lebih profesional.
-                    </p>
-                    <a href="{{ url('/artikel/cara-mengembangkan-jasa-konveksi') }}">
-                        Read More
-                    </a>
-                </div>
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-2.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
             </div>
+        </div>
 
-            <div class="article-page-card">
-                <img src="{{ asset('images/article-2.jpg') }}" alt="Article">
-                <div class="article-page-card-content">
-                    <h3>Sistem gaji kerja konveksi</h3>
-                    <p>
-                        Pembahasan singkat mengenai sistem kerja dan pengelolaan tenaga
-                        produksi dalam bisnis konveksi.
-                    </p>
-                    <a href="#">Read More</a>
-                </div>
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-3.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
             </div>
+        </div>
 
-            <div class="article-page-card">
-                <img src="{{ asset('images/article-3.jpg') }}" alt="Article">
-                <div class="article-page-card-content">
-                    <h3>Standar ukuran baju anak</h3>
-                    <p>
-                        Informasi dasar mengenai ukuran pakaian anak yang sering
-                        digunakan pada produksi baju.
-                    </p>
-                    <a href="#">Read More</a>
-                </div>
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-4.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
             </div>
+        </div>
 
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-5.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-6.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-7.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-8.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-9.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-10.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-11.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
+        </div>
+
+        <div class="article-card-page">
+            <img src="{{ asset('images/article-12.jpg') }}" alt="Artikel Label Baju">
+            <div class="article-card-text">
+                <h3>
+                    Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
+                </h3>
+                <p>- magna printing</p>
+            </div>
         </div>
 
     </div>
+
+    {{-- FOOTER --}}
+    <footer class="home-footer article-footer">
+        <div class="footer-column footer-brand">
+            <h2>WILOVA</h2>
+            <h4>Pabrik Label Baju</h4>
+
+            <p>
+                hadir untuk membantu mewujudkan identitas brand yang kuat melalui
+                label pakaian yang tidak hanya tahan lama, tetapi juga mampu meningkatkan
+                nilai visual dan daya tarik produk di mata pelanggan.
+                Setiap detail kami kerjakan dengan teliti, mulai dari pemilihan bahan
+                hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
+            </p>
+
+            <small>Design by @oktarrinshh</small>
+        </div>
+
+        <div class="footer-column footer-contact">
+            <h4>Contact us</h4>
+            <p>📷 wilovalabel</p>
+            <p>📞 082583020737</p>
+            <p>✉️ wilovalabel@mail.com</p>
+        </div>
+
+        <div class="footer-column footer-feedback">
+            <h4>Feedback & Suggestions</h4>
+
+            <p>
+                Kami sangat menghargai setiap feedback dan saran dari Anda.
+                Masukan yang diberikan membantu kami terus meningkatkan kualitas
+                produk dan pelayanan. Jangan ragu untuk berbagi pengalaman atau ide Anda
+                agar kami dapat memberikan layanan yang lebih baik ke depannya.
+            </p>
+        </div>
+    </footer>
+
 </section>
 
 @endsection

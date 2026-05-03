@@ -1,52 +1,105 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
+@extends('layouts.app')
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+@section('content')
+
+<section class="auth-page">
+
+    <div class="auth-container register-container">
+
+        <div class="auth-card">
+            <div class="auth-card-header">
+                <h2>Register</h2>
+                <p>Buat akun baru untuk mulai menggunakan layanan Wilova</p>
+            </div>
+
+            @if ($errors->any())
+                <div class="auth-alert">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('register.process') }}" class="auth-form">
+                @csrf
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        value="{{ old('name') }}" 
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        value="{{ old('email') }}" 
+                        placeholder="Masukkan email aktif"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        placeholder="Minimal 8 karakter"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input 
+                        type="password" 
+                        name="password_confirmation" 
+                        placeholder="Ulangi password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="auth-button">
+                    Register
+                </button>
+
+                <div class="auth-divider">
+                    <span>atau</span>
+                </div>
+
+                <a href="{{ route('login') }}" class="auth-secondary-button">
+                    Sudah Punya Akun? Login
+                </a>
+            </form>
         </div>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        <div class="auth-left register-left">
+            <div class="auth-logo-wrap">
+                <img src="{{ asset('images/logo.png') }}" alt="Wilova Logo">
+            </div>
+
+            <h1>Create Your Account</h1>
+            <p>
+                Daftar sekarang untuk mendapatkan pengalaman pemesanan label pakaian
+                yang lebih mudah, rapi, dan sesuai kebutuhan brand kamu.
+            </p>
+
+            <div class="auth-highlight">
+                <h3>Start Your Brand Journey</h3>
+                <span>with Wilova Label</span>
+            </div>
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+    </div>
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
+</section>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+@endsection

@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilova - Pabrik Label Baju</title>
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="{{ route('home') }}">
+            <img src="{{ asset('images/logo.png') }}" alt="Wilova Logo">
+        </a>
+    </div>
 
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
+    <div class="navbar-menu">
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('produk') }}">Product</a>
+        <a href="{{ route('testimonial') }}">Testimoni</a>
+        <a href="{{ route('artikel') }}">Article</a>
+        <a href="{{ route('profil') }}">Profile</a>
+        
+        @guest
+            <a href="{{ route('login') }}" class="login-navbar">Login</a>
+            <a href="{{ route('register') }}" class="register-navbar">Register</a>
+        @endguest
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
-    </body>
+        @auth
+            <a href="{{ route('dashboard') }}" class="login-navbar">Dashboard</a>
+
+            <form method="POST" action="{{ route('logout') }}" class="logout-form">
+                @csrf
+                <button type="submit" class="logout-navbar">Logout</button>
+            </form>
+        @endauth
+    </div>
+</nav>
+
+<main>
+    @yield('content')
+</main>
+
+</body>
 </html>

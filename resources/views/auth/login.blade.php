@@ -1,47 +1,90 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+@extends('layouts.app')
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+@section('content')
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+<section class="auth-page">
+
+    <div class="auth-container">
+
+        <div class="auth-left">
+            <div class="auth-logo-wrap">
+                <img src="{{ asset('images/logo.png') }}" alt="Wilova Logo">
+            </div>
+
+            <h1>Welcome Back!</h1>
+            <p>
+                Masuk ke akun Wilova untuk mengelola kebutuhan label pakaian,
+                melihat informasi pesanan, dan menjaga identitas brand kamu tetap profesional.
+            </p>
+
+            <div class="auth-highlight">
+                <h3>WILOVA</h3>
+                <span>Pabrik Label Baju</span>
+            </div>
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+        <div class="auth-card">
+            <div class="auth-card-header">
+                <h2>Login</h2>
+                <p>Silakan masuk menggunakan akun Anda</p>
+            </div>
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-            </label>
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
+            @if ($errors->any())
+                <div class="auth-alert">
+                    {{ $errors->first() }}
+                </div>
             @endif
 
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
+            <form method="POST" action="{{ route('login.process') }}" class="auth-form">
+                @csrf
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        value="{{ old('email') }}" 
+                        placeholder="Masukkan email Anda"
+                        required 
+                        autofocus
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        placeholder="Masukkan password Anda"
+                        required
+                    >
+                </div>
+
+                <div class="auth-options">
+                    <label class="remember-box">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="auth-button">
+                    Login
+                </button>
+
+                <div class="auth-divider">
+                    <span>atau</span>
+                </div>
+
+                <a href="{{ route('register') }}" class="auth-secondary-button">
+                    Buat Akun Baru
+                </a>
+            </form>
         </div>
-    </form>
-</x-guest-layout>
+
+    </div>
+
+</section>
+
+@endsection
