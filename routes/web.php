@@ -8,20 +8,18 @@ use App\Models\User;
 
 Route::view('/', 'home')->name('home');
 
-Route::view('/produk', 'produk')->name('produk');
-Route::view('/testimonial', 'testimonial')->name('testimonial');
 Route::view('/artikel', 'artikel')->name('artikel');
-Route::view('/profil', 'profil')->name('profil');
 Route::view('/kontak', 'kontak')->name('kontak');
+Route::view('/produk', 'produk')->name('produk');
+Route::view('/profil', 'profil')->name('profil');
+Route::view('/testimonial', 'testimonial')->name('testimonial');
 
-/* auth manual */
+/* login - user */
 
-// Halaman Login
 Route::get('/login', function () {
     return view('auth.login');
 })->middleware('guest')->name('login');
 
-// Proses Login
 Route::post('/login', function (Request $request) {
     $credentials = $request->validate([
         'email' => ['required', 'email'],
@@ -31,20 +29,28 @@ Route::post('/login', function (Request $request) {
     if (Auth::attempt($credentials, $request->boolean('remember'))) {
         $request->session()->regenerate();
 
-        return redirect()->intended('/dashboard');
+        if (Auth::user()->role === 'admin') {
+            Auth::logout();
+
+            return back()->withErrors([
+                'email' => 'Akun admin harus login melalui halaman Admin Login.',
+            ])->onlyInput('email');
+        }
+
+        return redirect()->route('user.dashboard');
     }
 
     return back()->withErrors([
-        'email' => 'Email atau password yang Anda masukkan salah.',
+        'email' => 'Email atau password user salah.',
     ])->onlyInput('email');
 })->middleware('guest')->name('login.process');
 
-// Halaman Register
+/* register user */
+
 Route::get('/register', function () {
     return view('auth.register');
 })->middleware('guest')->name('register');
 
-// Proses Register
 Route::post('/register', function (Request $request) {
     $data = $request->validate([
         'name' => ['required', 'string', 'max:255'],
@@ -56,21 +62,66 @@ Route::post('/register', function (Request $request) {
         'name' => $data['name'],
         'email' => $data['email'],
         'password' => Hash::make($data['password']),
+        'role' => 'user',
     ]);
 
     Auth::login($user);
-
     $request->session()->regenerate();
 
-    return redirect('/dashboard');
+    return redirect()->route('user.dashboard');
 })->middleware('guest')->name('register.process');
 
-// Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth')->name('dashboard');
+/* login - admin */
 
-// Logout
+Route::get('/admin/login', function () {
+    return view('auth.admin-login');
+})->middleware('guest')->name('admin.login');
+
+Route::post('/admin/login', function (Request $request) {
+    $credentials = $request->validate([
+        'email' => ['required', 'email'],
+        'password' => ['required'],
+    ]);
+
+    if (Auth::attempt($credentials, $request->boolean('remember'))) {
+        $request->session()->regenerate();
+
+        if (Auth::user()->role !== 'admin') {
+            Auth::logout();
+
+            return back()->withErrors([
+                'email' => 'Akun ini bukan akun admin.',
+            ])->onlyInput('email');
+        }
+
+        return redirect()->route('admin.dashboard');
+    }
+
+    return back()->withErrors([
+        'email' => 'Email atau password admin salah.',
+    ])->onlyInput('email');
+})->middleware('guest')->name('admin.login.process');
+
+/* dashboard */
+
+Route::get('/dashboard', function () {
+    if (Auth::user()->role === 'admin') {
+        return redirect()->route('admin.dashboard');
+    }
+
+    return view('dashboard-user');
+})->middleware('auth')->name('user.dashboard');
+
+Route::get('/admin/dashboard', function () {
+    if (Auth::user()->role !== 'admin') {
+        abort(403, 'Anda tidak memiliki akses ke halaman admin.');
+    }
+
+    return view('dashboard-admin');
+})->middleware('auth')->name('admin.dashboard');
+
+/* logout */
+
 Route::post('/logout', function (Request $request) {
     Auth::logout();
 
