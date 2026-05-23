@@ -31,7 +31,7 @@
             </div>
 
             <div class="review-user">
-                <img src="{{ asset('images/testi-1.jpg') }}" alt="Dine Oktaf">
+                <img src="{{ asset('assets/testimonials/client_testi1.png') }}" alt="Dine Oktaf">
                 <div>
                     <h4>Dine Oktaf</h4>
                     <p>Owner Hijab Aleya</p>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="review-user main-user">
-                <img src="{{ asset('images/testi-2.jpg') }}" alt="Nakeya Jessica">
+                <img src="{{ asset('assets/testimonials/client_testi2.png') }}" alt="Nakeya Jessica">
                 <div>
                     <h4>Nakeya Jessica</h4>
                     <p>Owner Zara</p>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="review-user">
-                <img src="{{ asset('images/testi-3.jpg') }}" alt="Nichole">
+                <img src="{{ asset('assets/testimonials/client_testi3.png') }}" alt="Nichole">
                 <div>
                     <h4>Nichole</h4>
                     <p>Owner Cole</p>
@@ -99,7 +99,7 @@
 
         <div class="review-grid">
             <div class="review-card">
-                <img src="{{ asset('images/testi-4.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi4.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -110,7 +110,7 @@
             </div>
 
             <div class="review-card">
-                <img src="{{ asset('images/testi-5.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi5.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -121,7 +121,7 @@
             </div>
 
             <div class="review-card">
-                <img src="{{ asset('images/testi-6.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi6.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -134,7 +134,7 @@
 
         <div class="review-grid middle-grid">
             <div class="review-card">
-                <img src="{{ asset('images/testi-7.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi7.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -153,7 +153,7 @@
             </div>
 
             <div class="review-card">
-                <img src="{{ asset('images/testi-8.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi8.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -166,7 +166,7 @@
 
         <div class="review-grid">
             <div class="review-card">
-                <img src="{{ asset('images/testi-9.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi9.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -177,7 +177,7 @@
             </div>
 
             <div class="review-card">
-                <img src="{{ asset('images/testi-10.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi10.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,
@@ -188,7 +188,7 @@
             </div>
 
             <div class="review-card">
-                <img src="{{ asset('images/testi-11.jpg') }}" alt="Customer">
+                <img src="{{ asset('assets/testimonials/client_testi11.png') }}" alt="Customer">
                 <div class="review-inner">
                     <p>
                         “Kualitas labelnya sangat rapi dan premium,

@@ -5,7 +5,7 @@
 {{-- SECTION 1: HERO + ARTICLE --}}
 <section class="hero-article-section">
     <div class="hero-left">
-        <img src="{{ asset('images/home-hero.jpg') }}" alt="Mesin bordir label baju">
+        <img src="{{ asset('assets/homepage/home_page(retail).png') }}" alt="Hero Image">
     </div>
 
     <div class="article-box">
@@ -60,7 +60,7 @@
 
 {{-- SECTION 2: QUOTE --}}
 <section class="quote-section">
-    <img src="{{ asset('images/logo.png') }}" alt="Wilova Logo">
+    <img src="{{ asset('assets/logo_wilova.png') }}" alt="Wilova Logo">
 
     <p>
         “Mengukir identitas merekmu melalui label pakaian <br>
@@ -77,22 +77,22 @@
 
     <div class="product-list">
         <div class="product-card">
-            <img src="{{ asset('images/product-1.jpg') }}" alt="Brand Label">
+            <img src="{{ asset('assets/homepage/brand_label.png') }}" alt="Brand Label">
             <div class="product-name">Brand Label</div>
         </div>
 
         <div class="product-card">
-            <img src="{{ asset('images/product-2.jpg') }}" alt="Name Tag">
+            <img src="{{ asset('assets/homepage/name_tag.png') }}" alt="Name Tag">
             <div class="product-name">Name Tag</div>
         </div>
 
         <div class="product-card">
-            <img src="{{ asset('images/product-3.jpg') }}" alt="Size Label">
+            <img src="{{ asset('assets/homepage/size_label.png') }}" alt="Size Label">
             <div class="product-name">Size Label</div>
         </div>
 
         <div class="product-card">
-            <img src="{{ asset('images/product-4.jpg') }}" alt="Hijab Tag">
+            <img src="{{ asset('assets/homepage/hijab_tag.png') }}" alt="Hijab Tag">
             <div class="product-name">Hijab Tag</div>
         </div>
     </div>
@@ -101,7 +101,7 @@
 {{-- SECTION 4: TESTIMONIAL --}}
 <section class="client-section">
     <div class="client-image">
-        <img src="{{ asset('images/client-label.jpg') }}" alt="Label kain">
+        <img src="{{ asset('assets/homepage/image_testi.png') }}" alt="Label kain">
 
         <div class="client-dots">
             <span></span>
@@ -118,7 +118,7 @@
 
         <div class="client-card">
             <div class="client-card-header">
-                <img src="{{ asset('images/client-profile.jpg') }}" alt="Keyrna Miska">
+                <img src="{{ asset('assets/homepage/user_testi.png') }}" alt="Keyrna Miska">
 
                 <div>
                     <h3>Keyrna Miska</h3>

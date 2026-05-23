@@ -30,7 +30,7 @@
         </div>
 
         <div class="profile-hero-image">
-            <img src="{{ asset('images/profile-hero.jpg') }}" alt="Profil Wilova">
+            <img src="{{ asset('assets/logo_wilova.png') }}" alt="Profil Wilova">
         </div>
     </section>
 

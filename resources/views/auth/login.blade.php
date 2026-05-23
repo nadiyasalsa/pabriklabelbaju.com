@@ -8,7 +8,7 @@
 
         <div class="auth-left">
             <div class="auth-logo-wrap">
-                <img src="{{ asset('images/logo.png') }}" alt="Wilova Logo">
+                <img src="{{ asset('assets/logo_wilova.png') }}" alt="Wilova Logo">
             </div>
 
             <h1>Welcome Back!</h1>

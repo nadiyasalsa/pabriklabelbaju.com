@@ -193,7 +193,7 @@ a {
 }
 
 .product-card {
-    height: 220px;
+    height: 475px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -504,7 +504,7 @@ a {
 
 .product-item-page img {
     width: 100%;
-    height: 310px;
+    height: 514px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -944,7 +944,7 @@ a {
 
 .article-card-page img {
     width: 100%;
-    height: 190px;
+    height: 294px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -1081,7 +1081,7 @@ a {
 
 .profile-hero-image img {
     width: 100%;
-    height: 430px;
+    height: 490px;
     object-fit: cover;
     border-radius: 18px;
     border: 1px solid #ff9fa6;
