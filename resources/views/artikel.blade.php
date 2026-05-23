@@ -23,7 +23,7 @@
     <div class="article-grid-page">
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-1.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article1.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -33,7 +33,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-2.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article2.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -43,7 +43,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-3.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article3.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -53,7 +53,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-4.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article5.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -63,7 +63,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-5.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article6.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -73,7 +73,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-6.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article7.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -83,7 +83,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-7.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article8.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -93,7 +93,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-8.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article1.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -103,7 +103,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-9.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article3.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -113,7 +113,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-10.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article1.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -123,7 +123,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-11.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article5.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen
@@ -133,7 +133,7 @@
         </div>
 
         <div class="article-card-page">
-            <img src="{{ asset('images/article-12.jpg') }}" alt="Artikel Label Baju">
+            <img src="{{ asset('assets/articles/article2.png') }}" alt="Artikel Label Baju">
             <div class="article-card-text">
                 <h3>
                     Panduan Lengkap Memilih Bahan Label Baju untuk Usaha Konveksi dan Garmen

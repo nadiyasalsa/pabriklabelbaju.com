@@ -29,7 +29,7 @@
     <div class="product-grid-page">
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-1.jpg') }}" alt="Name Tag">
+            <img src="{{ asset('assets/products/name_tag1.png') }}" alt="Name Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-2.jpg') }}" alt="Name Tag">
+            <img src="{{ asset('assets/products/name_tag2.png') }}" alt="Name Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -51,7 +51,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-3.jpg') }}" alt="Hijab Tag">
+            <img src="{{ asset('assets/products/name_tag3.png') }}" alt="Hijab Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -62,7 +62,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-4.jpg') }}" alt="Custom Name">
+            <img src="{{ asset('assets/products/name_tag4.png') }}" alt="Custom Name">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-5.jpg') }}" alt="Label Care">
+            <img src="{{ asset('assets/products/size_label1.png') }}" alt="Label Care">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-6.jpg') }}" alt="Size Label">
+            <img src="{{ asset('assets/products/size_label2.png') }}" alt="Size Label">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-7.jpg') }}" alt="Hang Tag">
+            <img src="{{ asset('assets/products/size_label3.png') }}" alt="Hang Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -106,7 +106,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-8.jpg') }}" alt="Paper Tag">
+            <img src="{{ asset('assets/products/size_label4.png') }}" alt="Paper Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -117,7 +117,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-9.jpg') }}" alt="Brand Label">
+            <img src="{{ asset('assets/products/size_tag1.png') }}" alt="Brand Label">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -128,7 +128,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-10.jpg') }}" alt="Leather Tag">
+            <img src="{{ asset('assets/products/size_tag2.png') }}" alt="Leather Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -139,7 +139,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-11.jpg') }}" alt="Size Tag">
+            <img src="{{ asset('assets/products/size_tag3.png') }}" alt="Size Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -150,7 +150,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-12.jpg') }}" alt="Hang Tag">
+            <img src="{{ asset('assets/products/size_tag4.png') }}" alt="Hang Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -161,7 +161,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-5.jpg') }}" alt="Label Care">
+            <img src="{{ asset('assets/products/size_tag1.png') }}" alt="Label Care">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -172,7 +172,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-6.jpg') }}" alt="Size Label">
+            <img src="{{ asset('assets/products/size_tag2.png') }}" alt="Size Label">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -183,7 +183,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-7.jpg') }}" alt="Hang Tag">
+            <img src="{{ asset('assets/products/size_tag3.png') }}" alt="Hang Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -194,7 +194,7 @@
         </div>
 
         <div class="product-item-page">
-            <img src="{{ asset('images/product-page-8.jpg') }}" alt="Paper Tag">
+            <img src="{{ asset('assets/products/size_tag4.png') }}" alt="Paper Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
                 <p>
@@ -209,7 +209,7 @@
     {{-- BANNER --}}
     <div class="product-banner">
         <div class="banner-image">
-            <img src="{{ asset('images/product-banner.png') }}" alt="Wilova Hang Tag">
+            <img src="{{ asset('assets/products/hang_tag.png') }}" alt="Wilova Hang Tag">
         </div>
 
         <div class="banner-text">

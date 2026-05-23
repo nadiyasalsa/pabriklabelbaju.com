@@ -14,7 +14,7 @@
 <nav class="navbar">
     <div class="navbar-logo">
         <a href="{{ route('home') }}">
-            <img src="{{ asset('images/logo.png') }}" alt="Wilova Logo">
+            <img src="{{ asset('assets/logo_wilova.png') }}" alt="Wilova Logo">
         </a>
     </div>
 
