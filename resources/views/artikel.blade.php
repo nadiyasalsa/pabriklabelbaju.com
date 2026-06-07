@@ -157,8 +157,7 @@
                 Setiap detail kami kerjakan dengan teliti, mulai dari pemilihan bahan
                 hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
             </p>
-
-            <small>Design by @oktarrinshh</small>
+            
         </div>
 
         <div class="footer-column footer-contact">

@@ -17,33 +17,21 @@
             <img src="{{ asset('assets/logo_wilova.png') }}" alt="Wilova Logo">
         </a>
     </div>
-
+    
     <div class="navbar-menu">
         <a href="{{ route('home') }}">Home</a>
         <a href="{{ route('produk') }}">Product</a>
         <a href="{{ route('testimonial') }}">Testimoni</a>
         <a href="{{ route('artikel') }}">Article</a>
         <a href="{{ route('profil') }}">Profile</a>
-        
-        @guest
-            <a href="{{ route('login') }}" class="login-navbar">Login</a>
-            <a href="{{ route('register') }}" class="register-navbar">Register</a>
-        @endguest
-
-        @auth
-            <a href="{{ route('dashboard') }}" class="login-navbar">Dashboard</a>
-
-            <form method="POST" action="{{ route('logout') }}" class="logout-form">
-                @csrf
-                <button type="submit" class="logout-navbar">Logout</button>
-            </form>
-        @endauth
     </div>
 </nav>
 
 <main>
     @yield('content')
 </main>
+
+<script src="{{ asset('js/site-interactions.js') }}"></script>
 
 </body>
 </html>

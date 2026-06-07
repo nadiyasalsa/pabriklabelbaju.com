@@ -19,7 +19,7 @@
                 <span>&gt;</span>
                 <div>
                     <h4>Cara mengembangkan jasa konveksi</h4>
-                    <button>Read</button>
+                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
                 <span>&gt;</span>
                 <div>
                     <h4>Sistem gaji kerja konveksi</h4>
-                    <button>Read</button>
+                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
                 <span>&gt;</span>
                 <div>
                     <h4>Standar ukuran baju anak</h4>
-                    <button>Read</button>
+                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@
                 <span>&gt;</span>
                 <div>
                     <h4>Warna yang cocok untuk baju</h4>
-                    <button>Read</button>
+                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
                 <span>&gt;</span>
                 <div>
                     <h4>Cara mempromosikan usaha konveksi</h4>
-                    <button>Read</button>
+                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
                 </div>
             </div>
         </div>
@@ -151,7 +151,6 @@
             hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
         </p>
 
-        <small>Design by @oktarrinshh</small>
     </div>
 
     <div class="footer-column footer-contact">

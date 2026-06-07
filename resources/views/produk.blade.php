@@ -18,11 +18,11 @@
     </div>
 
     {{-- CATEGORY BUTTON --}}
-    <div class="product-category">
-        <button>All Product</button>
-        <button>Label Brand</button>
-        <button>Name Tag</button>
-        <button>Label Care</button>
+    <div class="product-category" id="productFilter">
+        <button type="button" class="active" data-filter="all">All Product</button>
+        <button type="button" data-filter="label-brand">Label Brand</button>
+        <button type="button" data-filter="name-tag">Name Tag</button>
+        <button type="button" data-filter="label-care">Label Care</button>
     </div>
 
     {{-- PRODUCT GRID --}}
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="product-item-page">
+        <div class="product-item-page" data-category="name-tag">
             <img src="{{ asset('assets/products/name_tag2.png') }}" alt="Name Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="product-item-page">
+        <div class="product-item-page" data-category="name-tag">
             <img src="{{ asset('assets/products/name_tag3.png') }}" alt="Hijab Tag">
             <div class="product-info">
                 <h4>Name tag</h4>
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="product-item-page">
+        <div class="product-item-page" data-category="label-brand">
             <img src="{{ asset('assets/products/name_tag4.png') }}" alt="Custom Name">
             <div class="product-info">
                 <h4>Name tag</h4>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="product-item-page">
+        <div class="product-item-page" data-category="label-care">
             <img src="{{ asset('assets/products/size_label1.png') }}" alt="Label Care">
             <div class="product-info">
                 <h4>Name tag</h4>
@@ -234,7 +234,6 @@
                 hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
             </p>
 
-            <small>Design by @oktarrinshh</small>
         </div>
 
         <div class="footer-column footer-contact">
