@@ -1,53 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const filterWrap = document.getElementById('productFilter');
+    const filterButtons = document.querySelectorAll('#productFilter button');
+    const productItems = document.querySelectorAll('.product-item-page');
+    const productHeadings = document.querySelectorAll('.product-group-heading');
 
-    if (filterWrap) {
-        const buttons = filterWrap.querySelectorAll('button[data-filter]');
-        const products = document.querySelectorAll('.product-item-page[data-category]');
+    filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const selectedFilter = button.getAttribute('data-filter');
 
-        buttons.forEach(function (button) {
-            button.addEventListener('click', function () {
-                const filter = button.dataset.filter;
-
-                buttons.forEach(function (item) {
-                    item.classList.remove('active');
-                });
-
-                button.classList.add('active');
-
-                products.forEach(function (product) {
-                    const isMatch = filter === 'all' || product.dataset.category === filter;
-                    product.classList.toggle('is-hidden', !isMatch);
-                });
+            filterButtons.forEach(function (btn) {
+                btn.classList.remove('active');
             });
-        });
-    }
 
-    document.querySelectorAll('.product-card').forEach(function (card) {
-        card.setAttribute('tabindex', '0');
+            button.classList.add('active');
 
-        card.addEventListener('click', function () {
-            window.location.href = '/produk';
-        });
+            productItems.forEach(function (item) {
+                const itemCategory = item.getAttribute('data-category');
 
-        card.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-                window.location.href = '/produk';
-            }
-        });
-    });
+                if (selectedFilter === 'all' || itemCategory === selectedFilter) {
+                    item.hidden = false;
+                } else {
+                    item.hidden = true;
+                }
+            });
 
-    document.querySelectorAll('.article-card-page').forEach(function (card) {
-        card.setAttribute('tabindex', '0');
+            productHeadings.forEach(function (heading) {
+                const headingCategory = heading.getAttribute('data-category');
 
-        card.addEventListener('click', function () {
-            window.location.href = '/artikel/detail';
-        });
-
-        card.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-                window.location.href = '/artikel/detail';
-            }
+                if (selectedFilter === 'all' || headingCategory === selectedFilter) {
+                    heading.hidden = false;
+                } else {
+                    heading.hidden = true;
+                }
+            });
         });
     });
 });

@@ -15,7 +15,14 @@ use App\Models\User;
 Route::view('/', 'home')->name('home');
 Route::view('/produk', 'produk')->name('produk');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
-Route::view('/artikel', 'artikel')->name('artikel');
-Route::view('/artikel/detail', 'artikel-detail')->name('artikel.detail');
+Route::get('/artikel', function () {
+    return view('artikel');
+})->name('artikel');
+
+Route::get('/artikel/detail/{slug?}', function ($slug = 'sistem-gaji-kerja-konveksi') {
+    return view('artikel', [
+        'slug' => $slug,
+    ]);
+})->name('artikel.detail');
 Route::view('/profil', 'profil')->name('profil');
 Route::view('/kontak', 'kontak')->name('kontak');
