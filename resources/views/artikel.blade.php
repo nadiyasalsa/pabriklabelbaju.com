@@ -490,38 +490,41 @@
 
     </div>
 
-    {{-- FOOTER --}}
-    <footer class="home-footer article-footer">
-        <div class="footer-column footer-brand">
-            <h2>WILOVA</h2>
-            <h4>Pabrik Label Baju</h4>
+        {{-- FOOTER --}}
+    {{-- COMPACT FOOTER --}}
+    <footer class="contact-footer-modern">
+        <div class="contact-footer-modern-inner">
 
-            <p>
-                hadir untuk membantu mewujudkan identitas brand yang kuat melalui
-                label pakaian yang tidak hanya tahan lama, tetapi juga mampu meningkatkan
-                nilai visual dan daya tarik produk di mata pelanggan.
-                Setiap detail kami kerjakan dengan teliti, mulai dari pemilihan bahan
-                hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
-            </p>
+            <div class="contact-footer-brand-box">
+                <h2>WILOVA</h2>
+                <p>Pabrik Label Baju</p>
+            </div>
 
-            <small>Design by @oktarinshlh</small>
+            <div class="contact-footer-copy">
+                <h4>Label Custom untuk Brand Fashion</h4>
+                <p>
+                    Membantu produk fashion tampil lebih rapi, profesional, dan mudah
+                    dikenali melalui label brand, name tag, label care, dan hang tag custom.
+                </p>
+            </div>
+
+            <div class="contact-footer-service-box">
+                <h4>Layanan Kami</h4>
+
+                <div class="contact-footer-tags">
+                    <span>Label Brand</span>
+                    <span>Name Tag</span>
+                    <span>Label Care</span>
+                    <span>Hang Tag</span>
+                </div>
+            </div>
+
         </div>
 
-        <div class="footer-column footer-contact">
-            <h4>Contact us</h4>
-            <p>📷 wilovalabel</p>
-            <p>📞 082583020737</p>
-            <p>✉️ wilovalabel@mail.com</p>
-        </div>
+        <div class="contact-footer-line"></div>
 
-        <div class="footer-column footer-feedback">
-            <h4>Feedback & Suggestions</h4>
-            <p>
-                Kami sangat menghargai setiap feedback dan saran dari Anda.
-                Masukan yang diberikan membantu kami terus meningkatkan kualitas
-                produk dan pelayanan. Jangan ragu untuk berbagi pengalaman atau ide Anda
-                agar kami dapat memberikan layanan yang lebih baik ke depannya.
-            </p>
+        <div class="contact-footer-bottom-modern">
+            <p>© 2026 Wilova. All rights reserved.</p>
         </div>
     </footer>
 

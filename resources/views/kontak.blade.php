@@ -103,43 +103,44 @@
         </div>
     </div>
 
-    {{-- FOOTER --}}
-{{-- COMPACT FOOTER --}}
-<footer class="contact-footer-modern">
-    <div class="contact-footer-modern-inner">
+        {{-- FOOTER --}}
+    {{-- COMPACT FOOTER --}}
+    <footer class="contact-footer-modern">
+        <div class="contact-footer-modern-inner">
 
-        <div class="contact-footer-brand-box">
-            <h2>WILOVA</h2>
-            <p>Pabrik Label Baju</p>
-        </div>
-
-        <div class="contact-footer-copy">
-            <h4>Label Custom untuk Brand Fashion</h4>
-            <p>
-                Membantu produk fashion tampil lebih rapi, profesional, dan mudah
-                dikenali melalui label brand, name tag, label care, dan hang tag custom.
-            </p>
-        </div>
-
-        <div class="contact-footer-service-box">
-            <h4>Layanan Kami</h4>
-
-            <div class="contact-footer-tags">
-                <span>Label Brand</span>
-                <span>Name Tag</span>
-                <span>Label Care</span>
-                <span>Hang Tag</span>
+            <div class="contact-footer-brand-box">
+                <h2>WILOVA</h2>
+                <p>Pabrik Label Baju</p>
             </div>
+
+            <div class="contact-footer-copy">
+                <h4>Label Custom untuk Brand Fashion</h4>
+                <p>
+                    Membantu produk fashion tampil lebih rapi, profesional, dan mudah
+                    dikenali melalui label brand, name tag, label care, dan hang tag custom.
+                </p>
+            </div>
+
+            <div class="contact-footer-service-box">
+                <h4>Layanan Kami</h4>
+
+                <div class="contact-footer-tags">
+                    <span>Label Brand</span>
+                    <span>Name Tag</span>
+                    <span>Label Care</span>
+                    <span>Hang Tag</span>
+                </div>
+            </div>
+
         </div>
 
-    </div>
+        <div class="contact-footer-line"></div>
 
-    <div class="contact-footer-line"></div>
-
-    <div class="contact-footer-bottom-modern">
-        <p>© 2026 Wilova. All rights reserved.</p>
-    </div>
-</footer>
+        <div class="contact-footer-bottom-modern">
+            <p>© 2026 Wilova. All rights reserved.</p>
+        </div>
+    </footer>
+    
 </section>
 
 @endsection
