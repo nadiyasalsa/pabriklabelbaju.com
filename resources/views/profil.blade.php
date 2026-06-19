@@ -179,38 +179,68 @@
         </p>
     </section>
 
+
     {{-- FOOTER --}}
-    <footer class="home-footer profile-footer">
-        <div class="footer-column footer-brand">
-            <h2>WILOVA</h2>
-            <h4>Pabrik Label Baju</h4>
+    <footer class="home-footer-final">
+        <div class="home-footer-final-inner">
 
-            <p>
-                hadir untuk membantu mewujudkan identitas brand yang kuat melalui
-                label pakaian yang tidak hanya tahan lama, tetapi juga mampu meningkatkan
-                nilai visual dan daya tarik produk di mata pelanggan.
-                Setiap detail kami kerjakan dengan teliti, mulai dari pemilihan bahan
-                hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
-            </p>
+            {{-- BRAND --}}
+            <div class="home-footer-brand-final">
+                <h2>WILOVA</h2>
+                <h4>Pabrik Label Baju</h4>
+
+                <p>
+                    Wilova hadir untuk membantu membangun identitas brand yang kuat
+                    melalui label pakaian yang rapi, tahan lama, dan bernilai visual.
+                    Setiap detail kami kerjakan dengan teliti agar produk kamu tampil
+                    lebih profesional dan mudah dikenali.
+                </p>
+            </div>
+
+            {{-- CONTACT --}}
+            <div class="home-footer-contact-final">
+                <h4>Contact Us</h4>
+
+                <div class="home-footer-contact-list">
+                    <a href="https://www.instagram.com/wilovalabel" target="_blank">
+                        <span>📷</span>
+                        <p>@wilovalabel</p>
+                    </a>
+
+                    <a href="https://wa.me/6281575389735" target="_blank">
+                        <span>📞</span>
+                        <p>081575389735</p>
+                    </a>
+
+                    <a href="mailto:wilovalabel@mail.com">
+                        <span>✉️</span>
+                        <p>wilovalabel@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+
+            {{-- FEEDBACK --}}
+            <div class="home-footer-feedback-final">
+                <h4>Feedback & Suggestions</h4>
+
+                <p>
+                    Kami sangat menghargai setiap masukan dari pelanggan.
+                    Feedback kamu membantu Wilova meningkatkan kualitas produk,
+                    pelayanan, dan pengalaman pemesanan agar hasil yang diberikan
+                    semakin baik.
+                </p>
+
+                <div class="home-footer-badge-list">
+                    <span>Custom Label</span>
+                    <span>Fast Response</span>
+                    <span>Premium Finish</span>
+                </div>
+            </div>
 
         </div>
 
-        <div class="footer-column footer-contact">
-            <h4>Contact us</h4>
-            <p>📷 wilovalabel</p>
-            <p>📞 082583020737</p>
-            <p>✉️ wilovalabel@mail.com</p>
-        </div>
-
-        <div class="footer-column footer-feedback">
-            <h4>Feedback & Suggestions</h4>
-
-            <p>
-                Kami sangat menghargai setiap feedback dan saran dari Anda.
-                Masukan yang diberikan membantu kami terus meningkatkan kualitas
-                produk dan pelayanan. Jangan ragu untuk berbagi pengalaman atau ide Anda
-                agar kami dapat memberikan layanan yang lebih baik ke depannya.
-            </p>
+        <div class="home-footer-final-bottom">
+            <p>© 2026 Wilova. All rights reserved.</p>
         </div>
     </footer>
 

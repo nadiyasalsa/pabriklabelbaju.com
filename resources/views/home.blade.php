@@ -14,46 +14,46 @@
             <a href="{{ route('artikel') }}">See More</a>
         </div>
 
+        @php
+            $homeArticles = [
+                [
+                    'title' => 'Cara Mengembangkan Jasa Konveksi',
+                    'slug' => 'cara-mengembangkan-jasa-konveksi',
+                ],
+                [
+                    'title' => 'Sistem Gaji Kerja Konveksi',
+                    'slug' => 'sistem-gaji-kerja-konveksi',
+                ],
+                [
+                    'title' => 'Standar Ukuran Baju Anak',
+                    'slug' => 'standar-ukuran-baju-anak',
+                ],
+                [
+                    'title' => 'Warna yang Cocok untuk Baju',
+                    'slug' => 'warna-yang-cocok-untuk-baju',
+                ],
+                [
+                    'title' => 'Baju Konveksi Solusi Produksi Massal!',
+                    'slug' => 'baju-konveksi-solusi-produksi-massal',
+                ],
+            ];
+        @endphp
+
         <div class="article-list">
-            <div class="article-item">
-                <span>&gt;</span>
-                <div>
-                    <h4>Cara mengembangkan jasa konveksi</h4>
-                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
-                </div>
-            </div>
+            @foreach ($homeArticles as $article)
+                <div class="article-item">
+                    <span>&gt;</span>
 
-            <div class="article-item">
-                <span>&gt;</span>
-                <div>
-                    <h4>Sistem gaji kerja konveksi</h4>
-                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
-                </div>
-            </div>
+                    <div>
+                        <h4>{{ $article['title'] }}</h4>
 
-            <div class="article-item">
-                <span>&gt;</span>
-                <div>
-                    <h4>Standar ukuran baju anak</h4>
-                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
+                        <a href="{{ route('artikel.detail', ['slug' => $article['slug']]) }}"
+                           class="read-button">
+                            Read
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="article-item">
-                <span>&gt;</span>
-                <div>
-                    <h4>Warna yang cocok untuk baju</h4>
-                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
-                </div>
-            </div>
-
-            <div class="article-item">
-                <span>&gt;</span>
-                <div>
-                    <h4>Cara mempromosikan usaha konveksi</h4>
-                    <button><a href="{{ route('artikel.detail') }}" class="read-button">Read</a></button>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -72,7 +72,7 @@
 <section class="product-section">
     <div class="section-header">
         <h2>OUR PRODUCT</h2>
-        <a href="{{ route('produk') }}">See More</a>
+        <a href="{{ route('produk') }}" class="product-see-more-btn">See More</a>
     </div>
 
     <div class="product-list">
@@ -138,38 +138,70 @@
 </section>
 
 {{-- SECTION 5: FOOTER --}}
-<footer class="home-footer">
-    <div class="footer-column footer-brand">
-        <h2>WILOVA</h2>
-        <h4>Pabrik Label Baju</h4>
+{{-- FOOTER --}}
+<footer class="home-footer-final">
+    <div class="home-footer-final-inner">
 
-        <p>
-            hadir untuk membantu mewujudkan identitas brand yang kuat melalui
-            label pakaian yang tidak hanya tahan lama, tetapi juga mampu meningkatkan
-            nilai visual dan daya tarik produk di mata pelanggan.
-            Setiap detail kami kerjakan dengan teliti, mulai dari pemilihan bahan
-            hingga hasil akhir yang siap memperkuat citra brand kamu di pasar.
-        </p>
+        {{-- BRAND --}}
+        <div class="home-footer-brand-final">
+            <h2>WILOVA</h2>
+            <h4>Pabrik Label Baju</h4>
+
+            <p>
+                Wilova hadir untuk membantu membangun identitas brand yang kuat
+                melalui label pakaian yang rapi, tahan lama, dan bernilai visual.
+                Setiap detail kami kerjakan dengan teliti agar produk kamu tampil
+                lebih profesional dan mudah dikenali.
+            </p>
+        </div>
+
+        {{-- CONTACT --}}
+        <div class="home-footer-contact-final">
+            <h4>Contact Us</h4>
+
+            <div class="home-footer-contact-list">
+                <a href="https://www.instagram.com/wilovalabel" target="_blank">
+                    <span>📷</span>
+                    <p>@wilovalabel</p>
+                </a>
+
+                <a href="https://wa.me/6281575389735" target="_blank">
+                    <span>📞</span>
+                    <p>081575389735</p>
+                </a>
+
+                <a href="mailto:wilovalabel@mail.com">
+                    <span>✉️</span>
+                    <p>wilovalabel@gmail.com</p>
+                </a>
+            </div>
+        </div>
+
+        {{-- FEEDBACK --}}
+        <div class="home-footer-feedback-final">
+            <h4>Feedback & Suggestions</h4>
+
+            <p>
+                Kami sangat menghargai setiap masukan dari pelanggan.
+                Feedback kamu membantu Wilova meningkatkan kualitas produk,
+                pelayanan, dan pengalaman pemesanan agar hasil yang diberikan
+                semakin baik.
+            </p>
+
+            <div class="home-footer-badge-list">
+                <span>Custom Label</span>
+                <span>Fast Response</span>
+                <span>Premium Finish</span>
+            </div>
+        </div>
 
     </div>
 
-    <div class="footer-column footer-contact">
-        <h4>Contact us</h4>
-        <p>📷 wilovalabel</p>
-        <p>📞 082583020737</p>
-        <p>✉️ wilovalabel@mail.com</p>
-    </div>
-
-    <div class="footer-column footer-feedback">
-        <h4>Feedback & Suggestions</h4>
-
-        <p>
-            Kami sangat menghargai setiap feedback dan saran dari Anda.
-            Masukan yang diberikan membantu kami terus meningkatkan kualitas
-            produk dan pelayanan. Jangan ragu untuk berbagi pengalaman atau ide Anda
-            agar kami dapat memberikan layanan yang lebih baik ke depannya.
-        </p>
+    <div class="home-footer-final-bottom">
+        <p>© 2026 Wilova. All rights reserved.</p>
     </div>
 </footer>
+
+</section>
 
 @endsection
